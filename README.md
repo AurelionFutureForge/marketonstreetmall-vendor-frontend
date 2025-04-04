@@ -18,15 +18,16 @@ A modern, scalable vendor dashboard built with **Next.js 14**, **Tailwind CSS**,
 
 ## Tech/Framework Used
 
-- **Next.js 14**
-- **Tailwind CSS**
-- **TypeScript**
-- **Zustand**
-- **NextAuth**
-- **TanStack Query**
-- **React Hook Form**
-- **Zod**
-- **CASL**
+- **Next.js 15**: Core framework for React applications
+- **TypeScript**: Programming language for type safety
+- **Tailwind CSS**: Utility-first CSS framework
+- **ShadCN**: Components library
+- **Zustand**: State management library
+- **NextAuth**: Authentication solution
+- **TanStack Query**: Data fetching and caching library
+- **React Hook Form**: Form state management and validation
+- **Zod**: Schema validation library
+- **CASL**: Authorization library
 
 ---
 
