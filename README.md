@@ -68,24 +68,30 @@ Below is a simplified folder structure of the project:
 
 ```
 marketonstreetmall-vendor-frontend/
-├── public/
+├── public/                 # Static assets
 ├── src/
-│   ├── components/
-│   │   └── dashboard/
-│   │       ├── vendor-layout.tsx
-│   │       ├── content-layout.tsx
-│   ├── app/
-│   │   ├── dashboard/
-│   │   └── page.tsx
-│   ├── styles/
-│   ├── utils/
-│   ├── hooks/
-│   └── store/   # Zustand store
-├── .env.local   # Environment variables
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-└── README.md
+│   ├── app/                # App router pages and layouts
+│   │   └── [page]/         # Route-specific directories
+│   │       └── _components/ # Page-specific components
+│   ├── components/         # Shared reusable components
+│   ├── data/               # Static data files and constants
+│   ├── hooks/              # Custom React hooks
+│   ├── lib/                # Utility functions, providers, and helpers
+│   ├── schema/             # Form schemas and validation
+│   ├── services/           # API and data fetching services
+│   │   ├── api/            # API endpoint configurations
+│   │   ├── mutations/      # TanStack Query mutations
+│   │   ├── queries/        # TanStack Query queries
+│   │   └── types/          # API-related type definitions
+│   ├── utils/              # Helper functions and utilities
+│   ├── auth.ts             # Authentication configuration
+│   └── middleware.ts       # Next.js middleware
+├── .env.local              # Environment variables (not in repo)
+├── .env.example            # Example environment variables
+├── next.config.js          # Next.js configuration
+├── package.json            # Dependencies and scripts
+├── tsconfig.json           # TypeScript configuration
+└── tailwind.config.js      # Tailwind CSS configuration (if used)
 ```
 
 ---
@@ -152,4 +158,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 For any questions, issues, or feedback, feel free to reach out:
 
 - **Email**: support@marketonstreetmall.com
-- **GitHub**: [MarketOnStreetMall Vendor Frontend](https://github.com/YOUR_ORG/marketonstreetmall-vendor-frontend)
+- **GitHub**: [MarketOnStreetMall Vendor Frontend](https://github.com/AurelionFutureForge/marketonstreetmall-vendor-frontend)
