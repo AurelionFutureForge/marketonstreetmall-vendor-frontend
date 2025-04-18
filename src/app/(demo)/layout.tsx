@@ -5,5 +5,9 @@ export default function DemoLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <AdminPanelLayout>{children}</AdminPanelLayout>;
+  return (
+    <AdminPanelLayout>
+      <div className="">{children}</div>
+    </AdminPanelLayout>
+  );
 }

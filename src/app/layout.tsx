@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
-
+import QueryProvider from "@/lib/QueryProvider";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import { AuthProvider } from "@/providers/auth-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -42,9 +43,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={GeistSans.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
-        </ThemeProvider>
+        <AuthProvider>
+          <QueryProvider>
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+              {children}
+            </ThemeProvider>
+          </QueryProvider>
+        </AuthProvider>
       </body>
     </html>
   );
